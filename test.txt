@@ -1,0 +1,1 @@
+Szybki test commitowania po zakoñczonej wstêpnej konfiguracji klienta Git-a.
