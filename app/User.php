@@ -26,4 +26,24 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function manageProjects()
+    {
+        return $this->hasMany('App\Project','manager_id');
+    }
+
+    public function workProjects()
+    {
+        return $this->belongsToMany('App\Project', 'project_user', 'project_id', 'user_id');
+    }
+
+    public function tasks()
+    {
+        return $this->belongsToMany('App\Task', 'task_user', 'task_id', 'user_id');
+    }
+
+    public function messages()
+    {
+        return $this->hasMany('App\Message','receiver_id');
+    }
 }
