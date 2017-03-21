@@ -14,10 +14,11 @@ class CreateProjectsTable extends Migration
     public function up()
     {
         Schema::create('projects', function (Blueprint $table) {
-            $table->increments('project_id');
-            $table->string('project_name');
-            $table->string('project_assigned_user');
-            $table->rememberToken(); // mozliwe ze nie? :D
+            $table->increments('id');
+            $table->string('name');
+            $table->integer('manager_id')->unsigned();
+			$table->foreign('manager_id')->references('id')->on('users');
+            $table->timestamps();
         });
     }
 

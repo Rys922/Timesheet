@@ -14,10 +14,15 @@ class CreateMessagesTable extends Migration
     public function up()
     {
         Schema::create('messages', function (Blueprint $table) {
-            $table->increments('msg_id');
-            $table->string('msg_text');
-            $table->string('msg_reciver');
-            $table->rememberToken(); // mozliwe ze nie? :D
+            $table->increments('id');
+            $table->string('title');
+            $table->text('content');
+            $table->integer('receiver_id')->unsigned();
+			$table->foreign('receiver_id')->references('id')->on('users');
+            $table->integer('sender_id')->unsigned();
+			$table->foreign('sender_id')->references('id')->on('users');
+            $table->integer('seen')->default(0);
+            $table->timestamps();
         });
     }
 

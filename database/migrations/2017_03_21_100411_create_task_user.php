@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
+class CreateTaskUser extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,14 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('task_user', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('surname');
-            $table->string('email');
-            $table->string('password');
-            $table->rememberToken();
+            $table->integer('task_id')->unsigned();
+			$table->foreign('task_id')->references('id')->on('tasks');                 
+            $table->integer('user_id')->unsigned();
+			$table->foreign('user_id')->references('id')->on('users');      
             $table->timestamps();
-            $table->enum('role', ['user', 'manager','admin']);
-        });
+        });   
     }
 
     /**
@@ -32,6 +30,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+       Schema::dropIfExists('task_user');
     }
 }
