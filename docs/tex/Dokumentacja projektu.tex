@@ -1,12 +1,44 @@
-\documentclass[a4paper, 12pt, twoside]{article}
+\documentclass[a4paper, 12pt, oneside]{article}
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\newgeometry{tmargin=3.5cm, bmargin=3.5cm, lmargin=2.5cm, rmargin=2.5cm}
 
-\title{Timesheet}
+\title{\textbf{Timesheet}\linebreak Projekt zaliczeniowy -- dokumentacja}
 \author{J.W., O.Z., M.B, R.B, M.S}
 \date{2017}
 
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Timesheet}
+\lhead{Chapter name will go here}
+\rfoot{str. \thepage /\pageref{LastPage}}
 
 \begin{document}
-\paragraph{Będzie się tu znajdowała dokumentacja. Już wkrótce!}
+
+% Strona tytułowa
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+
+% Spis treści
+
+\tableofcontents
+\newpage
+
+% Treść
+
+\section{Założenia projektowe}
+\section{Wykorzystany język i technologie}
+\section{Realizacja}
+	\subsection{Logowanie użytkownika}
+	\subsection{Rejestracja użytkownika}
+
 \end{document}
