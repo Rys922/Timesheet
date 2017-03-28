@@ -22,7 +22,9 @@ class ProjectController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('layouts.projects.index');
+    {	
+		$projects = \App\Project::all();
+		
+        return view('layouts.projects.index') -> with('projects', $projects);
     }
 }
