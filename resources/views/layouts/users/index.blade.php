@@ -53,7 +53,7 @@
                         <button class="btn btn-xs disabled btn-warning">Wymuś zmiane hasła</button>
                      @endif
                      @if($user->blocked)
-                        <button class="btn btn-xs btn-success">Odblokuj</button>
+                        <button class="btn btn-xs btn-success"><a href="{{route('block.user',['id'=>$user->id])}}">Odblokuj</a></button>
                      @else
                         <button class="btn btn-xs btn-danger"><a href="{{route('block.user',['id'=>$user->id])}}">Zablokuj</a></button>
                     @endif

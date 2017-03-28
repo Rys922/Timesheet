@@ -13,7 +13,7 @@ class UserController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware(['auth','constraints']);
     }
 
     /**
@@ -30,8 +30,9 @@ class UserController extends Controller
 
     public function blockUser($id)
     {
-        $user = \App\User::whereId($id)->update(['blocked'=> 1]);
-
+        $user = \App\User::whereId($id)->where('blocked','=',0)->update(['blocked'=> 1]);
+        if(!$user)
+        \App\User::whereId($id)->where('blocked','=',1)->update(['blocked'=> 0]);
         return redirect() -> back();
     }
 }
