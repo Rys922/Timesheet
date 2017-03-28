@@ -99,7 +99,7 @@
         <li class="header">ADMIN</li>
 
         <li>
-          <a href="#">
+          <a href="{{route('projects')}}">
             <i class="fa fa-files-o"></i> <span>Projekty</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">{{\App\Project::all()->count()}}</small>
