@@ -27,4 +27,11 @@ class UserController extends Controller
 
         return view('layouts.users.index')->with('users',$users);
     }
+
+    public function blockUser($id)
+    {
+        $user = \App\User::whereId($id)->update(['blocked'=> 1]);
+
+        return redirect() -> back();
+    }
 }

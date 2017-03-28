@@ -55,7 +55,7 @@
                      @if($user->blocked)
                         <button class="btn btn-xs btn-success">Odblokuj</button>
                      @else
-                        <button class="btn btn-xs btn-danger">Zablokuj</button>
+                        <button class="btn btn-xs btn-danger"><a href="{{route('block.user')}}">Zablokuj</a></button>
                     @endif
                   </td>
                 </tr>

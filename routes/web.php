@@ -16,4 +16,5 @@ Auth::routes();
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
 Route::get('/users', 'UserController@index')->name('users');
+Route::get('/users/block/{id}', 'UserController@blockUser')->name('block.user');
 Route::get('/projects', 'ProjectController@index')->name('projects');
