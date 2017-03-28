@@ -35,5 +35,12 @@ class HomeController extends Controller
     public function changePasswordView()
     {
         return view('auth.passwords.change');
+
+    }
+
+    public function changePassword()
+    {
+        \App\User::whereId(Auth::user()->id)->update(['forced'=> 0]);
+        return redirect() -> back();
     }
 }
