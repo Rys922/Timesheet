@@ -34,6 +34,11 @@ class HomeController extends Controller
     
     public function changePasswordView()
     {
-        return view('auth.password.change');
+        return view('auth.passwords.change');
+    }
+
+    public function changePassword()
+    {
+        return redirect() -> back();
     }
 }

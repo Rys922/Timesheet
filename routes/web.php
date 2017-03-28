@@ -12,6 +12,9 @@
 */
 
 Auth::routes();
+    // Zmiana hasła
+    Route::get('/change/password', 'HomeController@changePasswordView')->name('change.password');
+    Route::post('/change/password', 'HomeController@changePassword')->name('post.password');
 
 Route::group(['middleware' => ['constraints']], function () {
     Route::get('/', 'HomeController@index');
@@ -19,8 +22,7 @@ Route::group(['middleware' => ['constraints']], function () {
 
     // Wylogowanie
     Route::get('/logout', 'HomeController@logout')->name('logout');
-    // Zmiana hasła
-    Route::get('/change/password', 'HomeController@changePasswordView')->name('change.password');
+    
 
     // Routing kontrolera użytkowników
     Route::get('/users', 'UserController@index')->name('users');
