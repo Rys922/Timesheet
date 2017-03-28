@@ -20,7 +20,7 @@ Route::group(['middleware' => ['constraints']], function () {
     // Wylogowanie
     Route::get('/logout', 'HomeController@logout')->name('logout');
     // Zmiana hasła
-    Route::get('/change/password', 'HomeController@index')->name('change.password');
+    Route::get('/change/password', 'HomeController@changePasswordView')->name('change.password');
 
     // Routing kontrolera użytkowników
     Route::get('/users', 'UserController@index')->name('users');

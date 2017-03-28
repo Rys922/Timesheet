@@ -90,7 +90,7 @@
         </div>
         <div class="pull-left info">
           <p>{{Auth::user()->name}} {{Auth::user()->surname}}</p>
-          <a href="{{route('logout)'}}"> Wyloguj</a>
+          <a href="{{route('logout')}}"> Wyloguj</a>
         </div>
       </div>
       <!-- sidebar menu: : style can be found in sidebar.less -->
