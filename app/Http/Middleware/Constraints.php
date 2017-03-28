@@ -22,6 +22,10 @@ class Constraints
             return redirect(route('login'));
         }
 
+        if(Auth::user()->forced){
+            return redirect(route('change.password'));
+        }
+
         return $next($request);
     }
 }

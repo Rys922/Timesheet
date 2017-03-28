@@ -48,9 +48,9 @@
                   </td>
                   <td>      
                      @if(!$user->forced)             
-                        <button class="btn btn-xs btn-warning">Wymuś zmiane hasła</button>
+                        <button class="btn btn-xs btn-warning"><a href="{{route('force.user',['id'=>$user->id])}}">Wymuś zmiane hasła</a></button>
                      @else
-                        <button class="btn btn-xs disabled btn-warning">Wymuś zmiane hasła</button>
+                        <button class="btn btn-xs btn-warning"><a href="{{route('force.user',['id'=>$user->id])}}">Odwymuś zmiane hasła</a></button>
                      @endif
                      @if($user->blocked)
                         <button class="btn btn-xs btn-success"><a href="{{route('block.user',['id'=>$user->id])}}">Odblokuj</a></button>

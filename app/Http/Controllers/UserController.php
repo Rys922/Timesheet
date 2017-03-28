@@ -33,6 +33,16 @@ class UserController extends Controller
         $user = \App\User::whereId($id)->where('blocked','=',0)->update(['blocked'=> 1]);
         if(!$user)
         \App\User::whereId($id)->where('blocked','=',1)->update(['blocked'=> 0]);
+        
+        return redirect() -> back();
+    }
+
+    public function forcePassword($id)
+    {
+        $user = \App\User::whereId($id)->where('forced','=',0)->update(['forced'=> 1]);
+        if(!$user)
+        \App\User::whereId($id)->where('forced','=',1)->update(['forced'=> 0]);
+        
         return redirect() -> back();
     }
 }
