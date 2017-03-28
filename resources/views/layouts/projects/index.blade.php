@@ -7,12 +7,14 @@
 @section('content')
 
 <div class="row">
-    <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="col-md-3 col-sm-6 col-xs-12">
       <div class="info-box">
         <span class="info-box-icon bg-orange"><i class="fa fa-star-o"></i></span>
         <div class="info-box-content">
           <span class="info-box-text">Dostępne projekty</span>
-          <span class="info-box-number">123</span>
+          <span class="info-box-number">
+		  {{$projects -> count()}}
+		  </span>
         </div><!-- /.info-box-content -->
       </div><!-- /.info-box -->
     </div><!-- /.col -->
@@ -35,11 +37,22 @@
   <div class="box-body">
 		<div class="row">
 			<div class="col-sm-6">{{$p -> description}}</div>
-			<div class="col-sm-3">Menedżer: {{$p -> manager -> name}} {{$p -> manager -> surname}}</div>
-			<div class="col-sm-3">
+			
+			<div class="col-sm-2">
 				<button class="btn btn-primary" data-toggle="control-sidebar">Edytuj</button>
 				<button class="btn btn-danger" data-toggle="control-sidebar">Usuń</button>
-		</div>
+			</div>
+			
+			<div class="col-sm-4">
+						
+			<div class="panel panel-default">
+				<div class="panel-heading">Menedżer: {{$p -> manager -> name}} {{$p -> manager -> surname}}</div>
+				<div class="panel-body">
+					{{$p -> manager -> email}}					
+				</div>
+			</div>
+			
+			</div>
 	</div>	
 	
   </div><!-- /.box-body -->
