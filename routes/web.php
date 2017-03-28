@@ -13,8 +13,17 @@
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index');
-Route::get('/home', 'HomeController@index');
-Route::get('/users', 'UserController@index')->name('users');
-Route::get('/users/block/{id}', 'UserController@blockUser')->name('block.user');
-Route::get('/projects', 'ProjectController@index')->name('projects');
+Route::group(['middleware' => ['constraints']], function () {
+    Route::get('/', 'HomeController@index');
+    Route::get('/home', 'HomeController@index');
+
+    // Zmiana hasła
+    Route::get('/change/password', 'HomeController@index')->name('users');
+
+    // Routing kontrolera użytkowników
+    Route::get('/users', 'UserController@index')->name('users');
+    Route::get('/users/block/{id}', 'UserController@blockUser')->name('block.user');
+
+    // Routing kontrolera projektów
+    Route::get('/projects', 'ProjectController@index')->name('projects');
+});
