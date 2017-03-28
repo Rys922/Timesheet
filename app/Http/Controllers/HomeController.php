@@ -25,4 +25,14 @@ class HomeController extends Controller
     {
         return view('layouts.app');
     }
+    public function logout()
+    {
+        Auth::logout();
+        return redirect(route('login'));
+    }
+    
+    public function changePasswordView()
+    {
+        return view('auth.password.change');
+    }
 }
