@@ -34,4 +34,5 @@ Route::group(['middleware' => ['constraints']], function () {
     Route::get('/projects/new', 'ProjectController@showProject')->name('project.add');
     Route::get('/projects/edit/{id}', 'ProjectController@showProject')->name('project.edit');
     Route::post('/projects/save', 'ProjectController@saveProject')->name('project.save');
+    Route::get('/projects/delete/{id}', 'ProjectController@deleteProject')->name('project.delete');
 });
