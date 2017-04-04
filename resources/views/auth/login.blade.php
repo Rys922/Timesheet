@@ -51,6 +51,11 @@
                                         {{ $errors->first('password') }}
                                     </span>
                                 @endif
+      @if (session('status'))
+                                    <span class="help-block text-red">
+                                        {{ session('status') }}
+                                    </span>
+                                @endif
       <div class="row">
         <div class="col-xs-8">
           <div class="checkbox icheck">

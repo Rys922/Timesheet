@@ -19,7 +19,7 @@ class Constraints
     {
         if(Auth::user()->blocked){
             Auth::logout();
-            return redirect(route('login'));
+            return redirect(route('login'))->with('status','Użytkownik jest zablokowany');
         }
 
         if(Auth::user()->forced){
