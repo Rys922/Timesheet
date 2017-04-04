@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use Validator;
+use Hash;
 
 class HomeController extends Controller
 {
@@ -38,9 +40,20 @@ class HomeController extends Controller
 
     }
 
-    public function changePassword()
+    public function changePassword(Request $request)
     {
-        \App\User::whereId(Auth::user()->id)->update(['forced'=> 0]);
-        return redirect() -> back();
+        
+        $validator = Validator::make($request->all(), [
+            'password' => 'confirmed|required|min:3',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+        
+        \App\User::whereId(Auth::user()->id)->update(['forced'=> 0,'password'=>Hash::make($request->input('password'))]);
+        return redirect('/');
     }
 }
