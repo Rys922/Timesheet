@@ -5,6 +5,27 @@
 @stop
 
 @section('content')
+
+<div class="row">
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <div class="info-box">
+        <span class="info-box-icon bg-green"><i class="fa fa-male"></i></span>
+        <div class="info-box-content">
+          <span class="info-box-text">Dostępni użytkownicy</span>
+          <span class="info-box-number">
+		  <h3>{{$users -> count()}}</h3>
+		  </span>
+        </div><!-- /.info-box-content -->
+      </div><!-- /.info-box -->
+    </div><!-- /.col -->
+    <div class="col-md-6 col-sm-6 col-xs-12">
+     
+    </div><!-- /.col -->
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <button class="btn btn-success btn-lg" data-toggle="control-sidebar">Dodaj nowego</button>  
+    </div><!-- /.col -->
+  </div>
+  
 <div class="row">
         <div class="col-xs-12">
           <div class="box">
