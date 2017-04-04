@@ -40,7 +40,7 @@
 			
 			<div class="col-sm-2">
 				<a class="btn btn-primary" href="{{route('project.edit',['id' => $p->id])}}">Edytuj</a>
-				<button class="btn btn-danger">Usuń</button>
+				<a class="btn btn-danger" href="{{route('project.delete',['id' => $p->id])}}">Usuń</a>
 			</div>
 			
 			<div class="col-sm-4">

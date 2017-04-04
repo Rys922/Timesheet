@@ -53,9 +53,16 @@ class ProjectController extends Controller
                         ->withErrors($validator)
                         ->withInput();
         }
-        
+        if($request->input('id')){
+            \App\Project::whereId($request->input('id'))->update(['name'=>$request->input('name'), 'description'=>$request->input('description'), 'manager_id'=>$request->input('manager')]);   
+        } else{
         \App\Project::create(['name'=>$request->input('name'), 'description'=>$request->input('description'), 'manager_id'=>$request->input('manager')]);
+        }
         return redirect(route('projects'));
     }
 
+    public function deleteProject($ID){
+        \App\Project::whereId($ID)->delete();
+         return redirect(route('projects'));
+    }
 }
