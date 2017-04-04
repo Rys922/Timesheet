@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Validator;
 
 class ProjectController extends Controller
 {
@@ -37,4 +38,24 @@ class ProjectController extends Controller
 
         return view('layouts.projects.edit') -> with('project', $project);
     }
+
+    public function saveProject(Request $request)
+    {
+        
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|min:3',
+            'description' => 'required|min:3',
+            'manager' => 'required|integer'       
+            ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+        
+        \App\Project::create(['name'=>$request->input('name'), 'description'=>$request->input('description'), 'manager_id'=>$request->input('manager')]);
+        return redirect(route('projects'));
+    }
+
 }
