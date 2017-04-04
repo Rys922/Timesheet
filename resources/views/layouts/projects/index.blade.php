@@ -9,11 +9,11 @@
 <div class="row">
     <div class="col-md-6 col-sm-6 col-xs-12">
       <div class="info-box">
-        <span class="info-box-icon bg-orange"><i class="fa fa-star-o"></i></span>
+        <span class="info-box-icon bg-orange"><i class="fa fa-file"></i></span>
         <div class="info-box-content">
           <span class="info-box-text">Dostępne projekty</span>
           <span class="info-box-number">
-		  {{$projects -> count()}}
+		  <h3>{{$projects -> count()}}</h3>
 		  </span>
         </div><!-- /.info-box-content -->
       </div><!-- /.info-box -->
