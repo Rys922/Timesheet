@@ -1,7 +1,7 @@
-#Timesheet - wymagania projektu
+# Timesheet - wymagania projektu
 ##
 
-###Informacje ogólne:
+### Informacje ogólne:
 - **Witryna internetowa**,
 - Należy zastosować ORM lub Micro-ORM,
 - Dane powinny być walidowane po stronie front i back endu,
@@ -11,7 +11,7 @@
 - Projekt będzie oceniany również ze względu na estetykę, 
 - Projekt musi posiadać czytelną dokumentację,
 
-###Aplikacja:
+### Aplikacja:
 - Rejestracje nowego użytkownika wraz z podaniem danych osobowych,
 - Mechanizm "Przypominania hasła",
 - W systemie muszą występować 3 role - Administrator, Manager i Pracownik,
