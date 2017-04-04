@@ -1,5 +1,4 @@
 # Timesheet - wymagania projektu
-##
 
 ### Informacje ogólne:
 - **Witryna internetowa**,
