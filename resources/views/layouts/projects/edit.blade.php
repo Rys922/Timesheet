@@ -32,6 +32,7 @@
             @foreach(\App\User::whereRole('manager')->get() as $m)
                 <option value="{{$m->id}}">{{$m->name}} {{$m->surname}}</option>
             @endforeach
+        </select>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
     </div>
       @if ($errors->has('manager'))
@@ -40,10 +41,9 @@
       </span>
       @endif
 
-        <div class="col-xs-4">
+     
           <button type="submit" class="btn btn-primary btn-block btn-flat">Zapisz</button>
-        </div>
-
+    
       </form>
 
 @stop
