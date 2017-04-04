@@ -5,7 +5,7 @@
 @stop
 
 @section('content')
-<h2>Dodaj nowy projekt</h2>
+<h2>@if(isset($project)) Edytuj @else Dodaj nowy @endif projekt</h2>
 <hr />
      <form method="POST" action="{{ route('project.save') }}">
                         {{ csrf_field() }}
