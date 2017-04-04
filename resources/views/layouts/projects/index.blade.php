@@ -22,7 +22,7 @@
      
     </div><!-- /.col -->
     <div class="col-md-6 col-sm-6 col-xs-12">
-      <button class="btn btn-success btn-lg" data-toggle="control-sidebar">Dodaj nowy</button>  
+      <a class="btn btn-success btn-lg" href="{{route('project.add')}}">Dodaj nowy</a>  
     </div><!-- /.col -->
   </div>
   
@@ -39,8 +39,8 @@
 			<div class="col-sm-6">{{$p -> description}}</div>
 			
 			<div class="col-sm-2">
-				<button class="btn btn-primary" data-toggle="control-sidebar">Edytuj</button>
-				<button class="btn btn-danger" data-toggle="control-sidebar">Usuń</button>
+				<a class="btn btn-primary" href="{{route('project.edit',['id' => $p->id])}}">Edytuj</a>
+				<button class="btn btn-danger">Usuń</button>
 			</div>
 			
 			<div class="col-sm-4">

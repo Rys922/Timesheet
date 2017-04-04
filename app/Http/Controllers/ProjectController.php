@@ -27,4 +27,14 @@ class ProjectController extends Controller
 		
         return view('layouts.projects.index') -> with('projects', $projects);
     }
+
+    public function showProject($id = null)
+    {	
+        $project = \App\Project::find($id);
+        
+		if(!$project)
+            return view('layouts.projects.edit');   
+
+        return view('layouts.projects.edit') -> with('project', $project);
+    }
 }
