@@ -108,7 +108,7 @@
         </li>
 
         <li>
-          <a href="#">
+          <a href="{{route('tasks')}}">
             <i class="fa fa-tasks"></i> <span>Zadania</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">{{\App\Task::all()->count()}}</small>
@@ -166,6 +166,20 @@
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">4</small>
               <small class="label pull-right bg-green">16</small>
+            </span>
+          </a>
+        </li>
+
+      </ul>
+      @endif
+      @if(Auth::user()->role == 'user')
+      <ul class="sidebar-menu">
+        <li class="header">PRACOWNIK</li>
+        <li>
+          <a href="{{route('tasks')}}">
+            <i class="fa fa-files-o"></i> <span>Zadania</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-green">{{Auth::user()->tasks->count()}}</small>
             </span>
           </a>
         </li>
