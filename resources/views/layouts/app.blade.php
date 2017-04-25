@@ -183,9 +183,17 @@
             </span>
           </a>
         </li>
+        <li>
+          <a href="{{route('comments')}}">
+            <i class="fa fa-files-o"></i> <span>Wpisy</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-green">{{Auth::user()->comments->count()}}</small>
+            </span>
+          </a>
+        </li>
 
       </ul>
-      @endif
+      @endif 
     </section>
     <!-- /.sidebar -->
   </aside>

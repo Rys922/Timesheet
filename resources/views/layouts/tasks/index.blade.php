@@ -46,7 +46,7 @@
 			
 			</div>
       <div class="col-sm-4">					
-          <a class="btn btn-block btn-primary" href="#">Dodaj wpis</a>		
+          <a class="btn btn-block btn-primary" href="{{route('comment.add',['id'=>$t->id])}}">Dodaj wpis</a>		
 			</div>
    
 	

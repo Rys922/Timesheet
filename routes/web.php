@@ -38,4 +38,10 @@ Route::group(['middleware' => ['constraints']], function () {
 
     // Routing kontrola zadań
     Route::get('/tasks', 'TaskController@index')->name('tasks');
+
+    // Routing kontrola wpisów
+    Route::get('/comments', 'CommentController@index')->name('comments');
+    Route::get('/comments/new/{id}', 'CommentController@showComment')->name('comment.add');
+    Route::get('/comments/edit/{id}', 'CommentController@showComment')->name('comment.edit');
+    Route::post('/comments/save', 'CommentController@saveComment')->name('comment.save');
 });
