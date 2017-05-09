@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Validator;
+use Auth;
 
 class ProjectController extends Controller
 {
@@ -24,8 +25,11 @@ class ProjectController extends Controller
      */
     public function index()
     {	
+        if(Auth::user()->role=='admin'){
 		$projects = \App\Project::all();
-		
+        }else{
+        $projects = Auth::user()->manageProjects;    
+        }
         return view('layouts.projects.index') -> with('projects', $projects);
     }
 
