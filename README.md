@@ -29,8 +29,8 @@
 - Generowanie raportu z przebiegu prac w projekcie,
 - Aprobowanie wpisów pracowników.
 
-### Administrator:
+### <s>Administrator</s>:
 - <s>Wyświetlanie listy użytkowników, zadań i projektów</s>,
 - <s>Możliwość zablokowania użytkownika lub wymuszenie zmiany hasła</s>,
 - <s>Dodawanie, edycja i usuwanie projektów</s>,
-- Przypisywanie managerów i pracowników do projektów.
+- <s>Przypisywanie managerów i pracowników do projektów</s>.
