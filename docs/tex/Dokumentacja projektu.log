@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.21)  21 MAR 2017 12:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.26)  9 MAY 2017 10:57
 entering extended mode
 **"./Dokumentacja projektu.tex"
 ("Dokumentacja projektu.tex"
@@ -491,20 +491,20 @@ Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 ("Dokumentacja projektu.aux")
 \openout1 = `"Dokumentacja projektu.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -543,40 +543,40 @@ LaTeX Font Info:    ... okay on input line 22.
 \c@lstlisting=\count98
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 22.
-LaTeX Font Info:    Try loading font information for OML+plm on input line 26.
+(lastpage)             ! on input line 23.
+LaTeX Font Info:    Try loading font information for OML+plm on input line 27.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 26.
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 27.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omsplsy.fd"
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 26.
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 27.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omxplex.fd"
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <14.4> on input line 26.
+(Font)              <14.4> on input line 27.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 26.
+(Font)              <10> on input line 27.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 26.
+(Font)              <7> on input line 27.
  [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] ("Dokumentacja projektu.t
 oc"
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 4.
+(Font)              <12> on input line 2.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 4.
+(Font)              <8> on input line 2.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 4.
+(Font)              <6> on input line 2.
 )
 \tf@toc=\write3
 \openout3 = `"Dokumentacja projektu.toc"'.
@@ -584,28 +584,37 @@ LaTeX Font Info:    External font `plex10' loaded for size
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
+ Make it at least 15.25676pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] 
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 46.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
+ [3] [4]
+
 AED: lastpage setting LastPage
-[3] ("Dokumentacja projektu.aux") ) 
+[5] ("Dokumentacja projektu.aux") ) 
 Here is how much of TeX's memory you used:
- 2797 strings out of 493333
- 37068 string characters out of 3139194
- 97367 words of memory out of 3000000
- 6316 multiletter control sequences out of 15000+200000
- 14108 words of font info for 40 fonts, out of 3000000 for 9000
+ 2815 strings out of 493333
+ 37371 string characters out of 3139194
+ 101327 words of memory out of 3000000
+ 6331 multiletter control sequences out of 15000+200000
+ 14365 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 26i,10n,43p,193b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 26i,10n,43p,556b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips
-/pl/plrm.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr12.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/pl/plr17.pfb>
-Output written on "Dokumentacja projektu.pdf" (3 pages, 30644 bytes).
+/pl/plrm.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/pl/plr12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/pl/plr17.pfb>
+Output written on "Dokumentacja projektu.pdf" (5 pages, 49762 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
+ 35 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

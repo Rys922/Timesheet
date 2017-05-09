@@ -6,6 +6,7 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \newgeometry{tmargin=3.5cm, bmargin=3.5cm, lmargin=2.5cm, rmargin=2.5cm}
+\linespread{1.5}
 
 \title{\textbf{Timesheet}\linebreak Projekt zaliczeniowy -- dokumentacja}
 \author{J.W., O.Z., M.B, R.B, M.S}
@@ -16,7 +17,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{Timesheet}
-\lhead{Chapter name will go here}
+\lhead{\bfseries\leftmark}
 \rfoot{str. \thepage /\pageref{LastPage}}
 
 \begin{document}
@@ -36,7 +37,83 @@
 % Treść
 
 \section{Założenia projektowe}
-\section{Wykorzystany język i technologie}
+	\subsection{Przeznaczenie aplikacji}
+		\paragraph{}Celem niniejszego projektu jest stworzenie aplikacji webowej, pozwalającej na zarządzanie zadaniami podczas pracy w zespole. Umożliwiać ona będzie tworzenie wielu projektów, a w ich ramach zadań, do realizacji których przydzielać będzie można konkretnych użytkowników. Każdy projekt posiadać będzie menadżera, który ma większe uprawnienia, niż pozostali członkowie zespołu. Administrator aplikacji posiada maksymalne uprawnienia i może zarządzać również menadżerami.
+	\subsection{Elementy składowe}
+		\paragraph{}Zgodnie z przedstawionymi wymaganiami, tworzona aplikacja składać się będzie z następujących elementów (cech):
+		\begin{itemize}
+		
+		\item Ogólne:
+		
+			\begin{itemize}
+				\item Witryna internetowa,
+				\item Należy zastosować ORM lub Micro-ORM,
+				\item Dane powinny być walidowane po stronie front i back endu,
+				\item Mechanizm logowania błędów,
+				\item Projektu musi się znajdować na repozytorium,
+				\item Dane muszą być zapisywane i odczytywane z bazy danych,
+				\item Projekt będzie oceniany również ze względu na estetykę,
+				\item Projekt musi posiadać czytelną dokumentację,
+			\end{itemize}
+			
+		\item Aplikacja:
+		
+		\begin{itemize}
+			\item Rejestracje nowego użytkownika wraz z podaniem danych osobowych,
+			\item Mechanizm "Przypominania hasła",
+			\item W systemie muszą występować 3 role - Administrator, Manager i Pracownik,
+			\item Moduł przesyłania wiadomości pomiędzy użytkownikami systemu,
+			\item We wszystkich tabelach w systemie powinna być możliwość filtracji danych,
+			\item Należy zaimplementować mechanizm aprobowania wpisów.
+		\end{itemize}
+		
+		\item Pracownik:
+			\begin{itemize}
+			
+			\item Możliwość dodawania i edycji wpisów za danych dzień pracy. Wpis musi zawierać: datę, czas pracy, projekt, zadanie, komentarz,
+			\item Wyświetlanie listy wszystkich wpisów (wraz z możliwością ich filtracji).
+		
+			\end{itemize}
+			
+			\item Manager:
+			
+			\begin{itemize}
+			
+			\item Wyświetlanie, dodawanie, edycja i usuwanie zadań (zadania powinny posiadać przewidywaną estymację),
+\item Wyświetlanie wszystkich projektów, które są prowadzone przez danego managera,
+\item Wyświetlanie listy pracowników w danym projekcie,
+\item Generowanie raportu z przebiegu prac w projekcie,
+\item Aprobowanie wpisów pracowników.
+			
+			\end{itemize}
+			
+			\item Administrator:
+			
+			\begin{itemize}
+			
+			\item Wyświetlanie listy użytkowników, zadań i projektów,
+\item Możliwość zablokowania użytkownika lub wymuszenie zmiany hasła,
+\item Dodawanie, edycja i usuwanie projektów,
+\item Przypisywanie managerów i pracowników do projektów.
+			
+			\end{itemize}
+			
+			
+			
+		\end{itemize}
+		
+	\section{Specyfikacja techniczna}
+		\subsection{Język programowania i framework}
+			Pehapiec i laravawawel
+		\subsection{Baza danych}
+			Jakaż to baza i jej struktura
+		\subsection{Repozytorium kodu}
+			\paragraph{}
+		\subsection{Uruchomienie aplikacji}
+			\paragraph{Baza danych}
+				Baza chodzi sobie tu i tam (adres i w ogóle)
+			\paragraph{Witryna}
+				XAMMP-u XAMMP-u
 \section{Realizacja}
 	\subsection{Logowanie użytkownika}
 	\subsection{Rejestracja użytkownika}
