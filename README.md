@@ -1,8 +1,8 @@
 # Timesheet - wymagania projektu
 
 ### Informacje ogólne:
-- **Witryna internetowa**,
-- Należy zastosować ORM lub Micro-ORM,
+- <s>**Witryna internetowa**</s>,
+- <s>Należy zastosować ORM lub Micro-ORM</s>,
 - Dane powinny być walidowane po stronie front i back endu,
 - Mechanizm logowania błędów,
 - Projektu musi się znajdować na repozytorium,
