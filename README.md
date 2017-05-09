@@ -24,7 +24,7 @@
 
 ### Manager:
 - Wyświetlanie, dodawanie, edycja i usuwanie zadań (zadania powinny posiadać przewidywaną estymację),
-- Wyświetlanie wszystkich projektów, które są prowadzone przez danego managera, 
+- <s>Wyświetlanie wszystkich projektów, które są prowadzone przez danego managera</s>, 
 - Wyświetlanie listy pracowników w danym projekcie,
 - Generowanie raportu z przebiegu prac w projekcie,
 - Aprobowanie wpisów pracowników.
