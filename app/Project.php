@@ -16,6 +16,6 @@ class Project extends Model
 
     public function workers()
     {
-        return $this->belongsToMany('App\User', 'project_user', 'user_id', 'project_id');
+        return $this->belongsToMany('App\User', 'project_user', 'project_id', 'user_id')->withPivot('id');
     }
 }

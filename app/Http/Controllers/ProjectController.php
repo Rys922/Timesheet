@@ -69,4 +69,21 @@ class ProjectController extends Controller
         \App\Project::whereId($ID)->delete();
          return redirect(route('projects'));
     }
+    public function hintUser(Request $request, $id){
+       $arr = \App\ProjectUser::where('project_id','=',$id)->pluck('user_id')->toArray();
+       return \App\User::where(function($query) use ($request){
+            $query->where('name','like','%'.$request->input('query').'%')->
+            orWhere('surname','like','%'.$request->input('query').'%')->
+            orWhere('email','like','%'.$request->input('query').'%');
+       })->where('role','=','user')->whereNotIn('id',$arr)->get()->toArray();
+    }
+    public function addUser($id, $pId){
+        if(\App\ProjectUser::where('user_id','=',$id)->where('project_id','=',$pId)->get()->isEmpty())
+            \App\ProjectUser::create(['user_id'=>$id,'project_id'=>$pId]);
+       return redirect()->back();
+    }
+    public function deleteUser($id){
+        \App\ProjectUser::find($id)->delete();
+       return redirect()->back();
+    }
 }

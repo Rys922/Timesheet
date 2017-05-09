@@ -28,7 +28,7 @@
 		<textarea name="description" id="descriptionForm" class="form-control" rows="3" 
 			placeholder="Opis..." dir="ltr" style="margin: 0px -7px 0px 0px;  min-width:100%; max-width:100%; min-height: 100px; max-height:200px;">
 			{{old('description') ? old('description') : (isset($project) ? $project->description : '') }}</textarea>        
-    </div>
+      </div>
       @if ($errors->has('description'))
       <span class="help-block text-red">
          {{ $errors->first('description') }}
@@ -55,5 +55,44 @@
           <button type="submit" class="btn btn-primary btn-block btn-flat">Zapisz</button>
     
       </form>
+      <br>
+@if($project)
+      <label for="descriptionForm">Dodaj pracownika:</label>
+      <div class="form-group has-feedback">
+		<input name="userId" id="userForm" class="form-control" value="">
+        <ul id="listUser" class="list-group"></ul>
+        </div>
+@endif
 
+@if($project->workers)
+    <label for="descriptionForm">Wybrani pracownicy:</label><br>
+    @foreach($project->workers as $worker)
+        <a class="btn btn-xs btn-default" href="{{route('project.delUser',['id'=>$worker->pivot->id])}}">{{$worker->name}} {{$worker->surname}} <i class="fa fa-times"></i></a>
+    @endforeach
+@endif
+
+
+@stop
+@section('extraJS')
+    @if($project)
+        <script>
+            $('#userForm').on('keyup',function(){
+                if($(this).val().length >= 3){
+                    $.ajax({
+                        method: "post",
+                        url:"{{ route('project.hintUser',['id'=>$project->id]) }}",
+                        data: {
+                            query: $(this).val()
+                        },
+                        success: function(array){
+                            $("#listUser").empty();
+                            $.each(array,function(){
+                                $("#listUser").append("<li class='list-group-item'><a href='/projects/adduser/"+this.id+"/{{$project->id}}' class='btn btn-xs btn-success'>Dodaj </a> "+this.name+" "+this.surname+" " +this.email+"</li>");
+                            })
+                        }
+                    });
+                }
+            });
+        </script>
+    @endif
 @stop
