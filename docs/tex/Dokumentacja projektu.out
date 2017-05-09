@@ -1,0 +1,21 @@
+\BOOKMARK [1][-]{section.1}{Za\233ozenia projektowe}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Przeznaczenie aplikacji}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Elementy sk\233adowe}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Specyfikacja techniczna}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Jezyk programowania i frameworki}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.1}{PHP oraz Laravel}{subsection.2.1}% 6
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Bootstrap}{subsection.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.2}{Baza danych}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.3}{Repozytorium kodu}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.4}{Zarzadzanie praca w zespole}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.5}{Uruchomienie aplikacji}{section.2}% 11
+\BOOKMARK [1][-]{section.3}{Realizacja}{}% 12
+\BOOKMARK [2][-]{subsection.3.1}{Przyk\233adowe widoki}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.1.1}{G\233\363wny ekran aplikacji}{subsection.3.1}% 14
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Tworzenie nowego projektu}{subsection.3.1}% 15
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Cos jeszcze \(?\)}{subsection.3.1}% 16
+\BOOKMARK [2][-]{subsection.3.2}{Mechanizm logowania uzytkownika}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.3}{Mechanizm rejestracji uzytkownika}{section.3}% 18
+\BOOKMARK [1][-]{section.4}{Testowanie}{}% 19
+\BOOKMARK [2][-]{subsection.4.1}{Metody testowania}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.2}{Jakies wnioski?}{section.4}% 21

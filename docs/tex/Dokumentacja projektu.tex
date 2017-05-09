@@ -5,12 +5,13 @@
 \usepackage{listings}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
+\usepackage[hidelinks]{hyperref}
 \newgeometry{tmargin=3.5cm, bmargin=3.5cm, lmargin=2.5cm, rmargin=2.5cm}
 \linespread{1.5}
 
-\title{\textbf{Timesheet}\linebreak Projekt zaliczeniowy -- dokumentacja}
-\author{J.W., O.Z., M.B, R.B, M.S}
-\date{2017}
+\title{\textbf{Projekt zaliczeniowy -- Timesheet}\linebreak Dokumentacja aplikacji do zarządzania zadaniami}
+\author{J.W., O.Z., M.B., R.B., M.S.}
+\date{Uniwersytet Śląski\\2017}
 
 \usepackage{fancyhdr}
  
@@ -103,19 +104,34 @@
 		\end{itemize}
 		
 	\section{Specyfikacja techniczna}
-		\subsection{Język programowania i framework}
-			Pehapiec i laravawawel
+		\subsection{Język programowania i frameworki}
+			\subsubsection{PHP oraz Laravel}
+				Pehapiec i laravawawel
+			\subsubsection{Bootstrap}
+				Butsztrap
 		\subsection{Baza danych}
 			Jakaż to baza i jej struktura
 		\subsection{Repozytorium kodu}
-			\paragraph{}
+			\paragraph{}Aby zapewnić najwyższą wygodę pracy w zespole oraz bezpieczeństwo tworzonego kodu aplikacji, pliki projektu umieszczone zostały w repozytorium w serwisie GitHub, pod adresem:  \url{https://github.com/Rys922/Timesheet}. Znajduje się tam najnowsza wersja kodu, która na bieżąco aktualizowana jest przez członków zespołu, wraz z postępem w pracach.
+			\paragraph{} Wykorzystanie rozproszonego systemu kontroli wersji, jakim jest Git, gwarantuje dostępność kodu dla wszystkich członków zespołu i umożliwia jednoczesną pracę na plikach (aktualna wersja kodu zapisana jest zarówno lokalnie na komputerze programisty, jak i na głównym serwerze usługi).
+			\subsection{Zarządzanie pracą w zespole}
+			\paragraph{}Do rozdzielania prac pomiędzy członków zespołu tworzącego niniejszy projekt, wykorzystano serwis \textit{Trelloo} (\url{https://trello.com}). Jest to aplikacja pozwalająca dzielić zadania na grupy, przypisywać im osoby oraz wyznaczać terminy ich realizacji. Dzięki możliwości przenoszenia zrealizowanych zadań do innych grup, łatwo śledzić bieżący postęp w pracach. Pozwala to również w razie błędów cofnąć wybrany etap z fazy gotowości na przykład do fazy dalszych testów lub ponownej implementacji. 
 		\subsection{Uruchomienie aplikacji}
 			\paragraph{Baza danych}
 				Baza chodzi sobie tu i tam (adres i w ogóle)
 			\paragraph{Witryna}
 				XAMMP-u XAMMP-u
 \section{Realizacja}
-	\subsection{Logowanie użytkownika}
-	\subsection{Rejestracja użytkownika}
+	\paragraph{Widoki}
+		Był sobie główny widok, który później się rozszerza
+		\subsection{Przykładowe widoki}
+			\subsubsection{Główny ekran aplikacji}
+			\subsubsection{Tworzenie nowego projektu}
+			\subsubsection{Coś jeszcze (?)}
+	\subsection{Mechanizm logowania użytkownika}
+	\subsection{Mechanizm rejestracji użytkownika}
+\section{Testowanie}
+	\subsection{Metody testowania}
+	\subsection{Jakieś wnioski?}
 
 \end{document}
