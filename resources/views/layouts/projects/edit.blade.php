@@ -56,7 +56,7 @@
     
       </form>
       <br>
-@if($project)
+@if(isset($project))
       <label for="descriptionForm">Dodaj pracownika:</label>
       <div class="form-group has-feedback">
 		<input name="userId" id="userForm" class="form-control" value="">
@@ -64,7 +64,7 @@
         </div>
 @endif
 
-@if($project->workers)
+@if(isset($project) && $project->workers)
     <label for="descriptionForm">Wybrani pracownicy:</label><br>
     @foreach($project->workers as $worker)
         <a class="btn btn-xs btn-default" href="{{route('project.delUser',['id'=>$worker->pivot->id])}}">{{$worker->name}} {{$worker->surname}} <i class="fa fa-times"></i></a>
@@ -74,7 +74,7 @@
 
 @stop
 @section('extraJS')
-    @if($project)
+    @if(isset($project))
         <script>
             $('#userForm').on('keyup',function(){
                 if($(this).val().length >= 3){

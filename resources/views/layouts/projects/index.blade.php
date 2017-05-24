@@ -22,7 +22,9 @@
      
     </div><!-- /.col -->
     <div class="col-md-6 col-sm-6 col-xs-12">
+    @if(Auth::user()->role == "admin")
       <a class="btn btn-success btn-lg" href="{{route('project.add')}}">Dodaj nowy</a>  
+      @endif
     </div><!-- /.col -->
   </div>
   
@@ -38,6 +40,7 @@
 		<div class="row">
 			<div class="col-sm-6">{{$p -> description}}</div>
 			
+      @if(Auth::user()->role == "admin")
 			<div class="col-sm-2">
 				<a class="btn btn-primary" href="{{route('project.edit',['id' => $p->id])}}">Edytuj</a>
 				<a class="btn btn-danger" href="{{route('project.delete',['id' => $p->id])}}">Usuń</a>
@@ -53,6 +56,16 @@
 			</div>
 			
 			</div>
+      @else
+      <div class="col-sm-6">
+        @if($p->workers)
+          Pracownicy<br>
+          @foreach($p->workers as $worker)
+              <button class="btn btn-xs btn-default">{{$worker->name}} {{$worker->surname}}</button>
+          @endforeach
+        @endif
+      </div>
+      @endif
 	</div>	
 	
   </div><!-- /.box-body -->

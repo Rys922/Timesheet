@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    Wpis | @if(isset($project)) Edycja @else Nowy @endif
+    Wpis | @if(isset($comment)) Edycja @else Nowy @endif
 @stop
 
 @section('content')

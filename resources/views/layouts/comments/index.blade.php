@@ -43,39 +43,32 @@
             <div class="box-body table-responsive no-padding">
               <table class="table table-hover">
                 <tbody><tr>
-                  <th>Imię</th>
-                  <th>Nazwisko</th>
-                  <th>Email</th>
-                  <th>Rola</th>
+                  <th>Projekt</th>
+                  <th>Zadanie</th>
+                  <th>Data</th>
+                  <th>Czas pracy</th>
+                  <th>Komentarz</th>
+                  <th>Stan wpisu</th>
                   <th></th>
                 </tr>
                 @foreach($comments as $c)
                 <tr>
-                  <td>{{$user->name}}</td>
-                  <td>{{$user->surname}}</td>
-                  <td>{{$user->email}}</td>
+                  <td>{{$c->task->project->name}}</td>
+                  <td>{{$c->task->name}}</td>
+                  <td>{{$c->workday}}</td>
+                  <td>{{$c->time}}</td>
+                  <td>{{$c->content}}</td>
                   <td><span class="label 
-                  @if($user->role == "admin")
-                    label-info
-                  @elseif($user->role == "manager")
-                    label-primary
-                  @else
+                  @if($c->stan == "Zaakceptowany")
+                    label-success
+                  @elseif($c->stan == "Oczekuje")
                     label-default
+                  @else
+                    label-danger
                   @endif
-                  ">{{$user->role}}</span>
+                  ">{{$c->stan}}</span>
                   </td>
-                  <td>      
-                     @if(!$user->forced)             
-                        <button class="btn btn-xs btn-warning"><a href="{{route('force.user',['id'=>$user->id])}}">Wymuś zmiane hasła</a></button>
-                     @else
-                        <button class="btn btn-xs btn-warning"><a href="{{route('force.user',['id'=>$user->id])}}">Odwymuś zmiane hasła</a></button>
-                     @endif
-                     @if($user->blocked)
-                        <button class="btn btn-xs btn-success"><a href="{{route('block.user',['id'=>$user->id])}}">Odblokuj</a></button>
-                     @else
-                        <button class="btn btn-xs btn-danger"><a href="{{route('block.user',['id'=>$user->id])}}">Zablokuj</a></button>
-                    @endif
-                  </td>
+                  <td>@if($c->stan == "Oczekuje")	<a class="btn btn-xs btn-primary" href="{{route('comment.edit',['id' => $c->id])}}">Edytuj</a>@endif</td>
                 </tr>
                 @endforeach
                 

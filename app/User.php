@@ -51,4 +51,7 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Comment','user_id');
     }
+    public function unconfirmedComments(){
+        return \App\Comment::whereIn('id',$this->tasks->pluck('id'))->get();
+    }
 }

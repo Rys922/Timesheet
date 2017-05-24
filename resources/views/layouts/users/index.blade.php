@@ -21,9 +21,6 @@
     <div class="col-md-6 col-sm-6 col-xs-12">
      
     </div><!-- /.col -->
-    <div class="col-md-6 col-sm-6 col-xs-12">
-      <button class="btn btn-success btn-lg" data-toggle="control-sidebar">Dodaj nowego</button>  
-    </div><!-- /.col -->
   </div>
   
 <div class="row">

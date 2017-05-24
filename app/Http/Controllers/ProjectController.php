@@ -26,9 +26,11 @@ class ProjectController extends Controller
     public function index()
     {	
         if(Auth::user()->role=='admin'){
-		$projects = \App\Project::all();
+		    $projects = \App\Project::all();
+        }elseif(Auth::user()->role=='manager'){
+            $projects = Auth::user()->manageProjects;    
         }else{
-        $projects = Auth::user()->manageProjects;    
+            return redirect('/');
         }
         return view('layouts.projects.index') -> with('projects', $projects);
     }
@@ -37,10 +39,14 @@ class ProjectController extends Controller
     {	
         $project = \App\Project::find($id);
         
-		if(!$project)
-            return view('layouts.projects.edit');   
+		
+            if(Auth::user()->role == "admin")
+                if(!$project)
+                    return view('layouts.projects.edit');   
+                else
+                    return view('layouts.projects.edit') -> with('project', $project);
 
-        return view('layouts.projects.edit') -> with('project', $project);
+       return redirect('/');        
     }
 
     public function saveProject(Request $request)
@@ -48,7 +54,7 @@ class ProjectController extends Controller
         
         $validator = Validator::make($request->all(), [
             'name' => 'required|min:3',
-            'description' => 'required|min:3',
+            'description' => 'required|min:3|max:1024',
             'manager' => 'required|integer'       
             ]);
 

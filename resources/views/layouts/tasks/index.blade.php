@@ -38,15 +38,24 @@
   </div><!-- /.box-header -->
   <div class="box-body">
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-4">
 						
         <div class="panel panel-default">
           <div class="panel-heading">Projekt: {{$t -> project -> name}}</div>
         </div>
 			
 			</div>
-      <div class="col-sm-4">					
+      <div class="col-sm-4">
+						
+        <div class="panel panel-default">
+          <div class="panel-heading">Menadżer: {{$t -> project -> manager ->name}} {{$t -> project -> manager ->surname}}</div>
+        </div>
+			
+			</div>
+      <div class="col-sm-4">			
+        @if(Auth::user()->role=='user')		
           <a class="btn btn-block btn-primary" href="{{route('comment.add',['id'=>$t->id])}}">Dodaj wpis</a>		
+        @endif
 			</div>
    
 	

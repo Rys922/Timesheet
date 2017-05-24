@@ -24,12 +24,16 @@ class CommentController extends Controller
      */
     public function index()
     {	
+        if(Auth::user()->role != "user")
+            return redirect('/');
         $comments = Auth::user()->comments;
 		
         return view('layouts.comments.index') -> with('comments', $comments);
     }
     public function showNewComment($id)
     {	
+        if(Auth::user()->role != "user")
+            return redirect('/');
         $comment = \App\Comment::find($id);
 
         return view('layouts.comments.edit')->with('task_id',$id);   
@@ -37,6 +41,8 @@ class CommentController extends Controller
 
     public function showComment($id = null)
     {	
+        if(Auth::user()->role != "user")
+            return redirect('/');
         $comment = \App\Comment::find($id);
 
         return view('layouts.comments.edit') -> with('comment', $comment);
@@ -68,6 +74,6 @@ class CommentController extends Controller
             'user_id'=>Auth::user()->id,
             'task_id' => $request->input('task_id')]);
         }
-        return redirect(route('projects'));
+        return redirect(route('comments'));
     }
 }
