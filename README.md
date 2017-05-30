@@ -18,7 +18,7 @@
 - We wszystkich tabelach w systemie powinna być możliwość filtracji danych,
 - Należy zaimplementować mechanizm aprobowania wpisów.
 
-### Pracownik:
+### <s>Pracownik</s>:
 - <s>Możliwość dodawania i edycji wpisów za danych dzień pracy. Wpis musi zawierać: datę, czas pracy, projekt, zadanie, komentarz</s>,
 - <s>Wyświetlanie listy wszystkich wpisów (wraz z możliwością ich filtracji)</s>.
 
