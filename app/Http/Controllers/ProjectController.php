@@ -23,12 +23,23 @@ class ProjectController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {	
         if(Auth::user()->role=='admin'){
-		    $projects = \App\Project::all();
-        }elseif(Auth::user()->role=='manager'){
-            $projects = Auth::user()->manageProjects;    
+            if(!$request->has('query'))
+		        $projects = \App\Project::all();
+            else{
+                $projects = \App\Project::where(function($query) use ($request){
+            $query->where('name','like','%'.$request->input('query').'%');
+       })->get();     
+            }
+        }elseif(Auth::user()->role=='manager'){ 
+            if(!$request->has('query'))
+		        $projects = Auth::user()->manageProjects;   
+            else{
+                $projects = \App\Project::where(function($query) use ($request){
+            $query->where('name','like','%'.$request->input('query').'%');
+       })->where('manager_id','=',Auth::user()->id)->get();} 
         }else{
             return redirect('/');
         }

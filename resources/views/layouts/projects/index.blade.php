@@ -21,13 +21,33 @@
     <div class="col-md-6 col-sm-6 col-xs-12">
      
     </div><!-- /.col -->
-    <div class="col-md-6 col-sm-6 col-xs-12">
+
+
+
+    <div class="col-md-3 col-sm-3 col-xs-12">
     @if(Auth::user()->role == "admin")
       <a class="btn btn-success btn-lg" href="{{route('project.add')}}">Dodaj nowy</a>  
       @endif
     </div><!-- /.col -->
+
+    <div class="col-md-3 col-sm-3 col-xs-12">
+    <form method="get" action="{{route('projects')}}">
+            <div class="input-group input-group-sm" style="width: 150px;" align="right">
+                  <input type="text" name="query" class="form-control pull-right" placeholder="Search" value="{{request()->has('query') ? request()->input('query'):''}}">
+
+                  <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default">  <i class="fa fa-search"></i></button>
+                  </div>
+                </div></form>
+    </div><!-- /.col -->
+
+
+
+
   </div>
   
+    
+
   @foreach($projects as $p)
 <div class="box box-default collapsed-box">
   <div class="box-header with-border">
