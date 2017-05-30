@@ -33,7 +33,7 @@
     <div class="col-md-3 col-sm-3 col-xs-12">
     <form method="get" action="{{route('projects')}}">
             <div class="input-group input-group-sm" style="width: 150px;" align="right">
-                  <input type="text" name="query" class="form-control pull-right" placeholder="Search" value="{{request()->has('query') ? request()->input('query'):''}}">
+                  <input type="text" name="query" class="form-control pull-right" placeholder="Szukaj" value="{{request()->has('query') ? request()->input('query'):''}}">
 
                   <div class="input-group-btn">
                     <button type="submit" class="btn btn-default">  <i class="fa fa-search"></i></button>

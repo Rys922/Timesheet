@@ -20,11 +20,22 @@ class UserController extends Controller
      * Show the application dashboard.
      *
      * @return \Illuminate\Http\Response
+     *
      */
-    public function index()
-    {
-        $users = \App\User::orderBy('role','desc')->get();
 
+    public function index(Request $request)
+    {
+        if(!$request->has('query')){
+            $users = \App\User::orderBy('role','desc')->get();
+        }
+        else{
+            $users = \App\User::where(function($query) use ($request){
+            $query->where('name','like','%'.$request->input('query').'%')->
+            orWhere('surname','like','%'.$request->input('query').'%')->
+            orWhere('email','like','%'.$request->input('query').'%');
+            })->get();     
+        }
+        
         return view('layouts.users.index')->with('users',$users);
     }
 

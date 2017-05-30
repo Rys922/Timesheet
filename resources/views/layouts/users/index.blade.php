@@ -21,7 +21,19 @@
     <div class="col-md-6 col-sm-6 col-xs-12">
      
     </div><!-- /.col -->
-  </div>
+
+
+
+    <div class="col-md-3 col-sm-3 col-xs-12">
+    <form method="get" action="{{route('users')}}">
+            <div class="input-group input-group-sm" style="width: 150px;" align="right">
+                  <input type="text" name="query" class="form-control pull-right" placeholder="Szukaj" value="{{request()->has('query') ? request()->input('query'):''}}">
+
+                  <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default">  <i class="fa fa-search"></i></button>
+                  </div>
+                </div></form>
+    </div><!-- /.col -->
   
 <div class="row">
         <div class="col-xs-12">
@@ -29,8 +41,8 @@
             <div class="box-header">
               <h3 class="box-title">Użytkownicy</h3>
 
-              <div class="box-tools">
-                <div class="input-group input-group-sm" style="width: 150px;">
+              <!--<div class="box-tools">
+                //<div class="input-group input-group-sm" style="width: 150px;">
                   <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
 
                   <div class="input-group-btn">
@@ -38,7 +50,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div>-->
             <!-- /.box-header -->
             <div class="box-body table-responsive no-padding">
               <table class="table table-hover">

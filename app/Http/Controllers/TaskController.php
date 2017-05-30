@@ -22,14 +22,30 @@ class TaskController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+
+    public function index(Request $request)
     {	
-        if(Auth::user()->role == 'admin')
-		    $tasks = \App\Task::all();
-        else
-            $tasks = Auth::user()->tasks;
-		
+        if(Auth::user()->role == 'admin'){
+            if(!$request->has('query'))
+		        $tasks = \App\Task::all();
+            else{
+                $tasks = \App\Task::where(function($query) use ($request){
+            $query->where('name','like','%'.$request->input('query').'%');
+       })->get();     
+            }
+        }elseif(Auth::user()->role=='manager'){ 
+            if(!$request->has('query'))
+		        $tasks = Auth::user()->manageProjects;   
+            else{
+                $tasks = \App\Task::where(function($query) use ($request){
+            $query->where('name','like','%'.$request->input('query').'%');
+       })->get(); 
+            }
+        }
         return view('layouts.tasks.index') -> with('tasks', $tasks);
+
+
+
     }
 
     public function showTask($id = null)
