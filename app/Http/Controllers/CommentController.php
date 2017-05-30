@@ -44,8 +44,17 @@ class CommentController extends Controller
         if(Auth::user()->role != "user")
             return redirect('/');
         $comment = \App\Comment::find($id);
-
+        if($comment->state != "Oczekuje")
+            return redirect('/');
         return view('layouts.comments.edit') -> with('comment', $comment);
+    }
+
+    public function showTasksToConfirm(){
+        if(Auth::user()->role != "manager")
+            return redirect('/');
+        $comments = Auth::user()->unconfirmedComments();
+
+        return view('layouts.comments.index') -> with('comments', $comments);
     }
 
     public function saveComment(Request $request)
@@ -75,5 +84,18 @@ class CommentController extends Controller
             'task_id' => $request->input('task_id')]);
         }
         return redirect(route('comments'));
+    }
+
+    public function doAccept($id){
+        if(Auth::user()->role != "manager")
+            return redirect('/');
+            \App\Comment::whereId($id)->update(['stan'=>'Zaakceptowany']);
+        return redirect()->back();
+    }
+    public function doDecline($id){
+        if(Auth::user()->role != "manager")
+            return redirect('/');
+            \App\Comment::whereId($id)->update(['stan'=>'Odrzucony']);
+        return redirect()->back();
     }
 }

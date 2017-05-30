@@ -153,7 +153,7 @@
         </li>
 
          <li>
-          <a href="#">
+          <a href="{{route('comments.confirm')}}">
             <i class="fa fa-files-o"></i> <span>Do zatwierdzenia</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">{{Auth::user()->unconfirmedComments()->count()}}</small>

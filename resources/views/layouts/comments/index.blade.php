@@ -45,19 +45,28 @@
                 <tbody><tr>
                   <th>Projekt</th>
                   <th>Zadanie</th>
+                  @if(Auth::user()->role == 'manager')
+                  <th>Pracownik</th>
+                  @endif
                   <th>Data</th>
                   <th>Czas pracy</th>
                   <th>Komentarz</th>
+                  @if(Auth::user()->role != 'manager')
                   <th>Stan wpisu</th>
+                  @endif
                   <th></th>
                 </tr>
                 @foreach($comments as $c)
                 <tr>
                   <td>{{$c->task->project->name}}</td>
                   <td>{{$c->task->name}}</td>
+                  @if(Auth::user()->role == 'manager')
+                  <td>{{$c->user->name}} {{$c->user->surname}}</td>
+                  @endif
                   <td>{{$c->workday}}</td>
                   <td>{{$c->time}}</td>
                   <td>{{$c->content}}</td>
+                  @if(Auth::user()->role != 'manager')
                   <td><span class="label 
                   @if($c->stan == "Zaakceptowany")
                     label-success
@@ -68,7 +77,12 @@
                   @endif
                   ">{{$c->stan}}</span>
                   </td>
-                  <td>@if($c->stan == "Oczekuje")	<a class="btn btn-xs btn-primary" href="{{route('comment.edit',['id' => $c->id])}}">Edytuj</a>@endif</td>
+                  @endif
+                  <td>
+                    @if($c->stan == "Oczekuje" && Auth::user()->role == 'user')	<a class="btn btn-xs btn-primary" href="{{route('comment.edit',['id' => $c->id])}}">Edytuj</a>@endif
+                    @if(Auth::user()->role == 'manager') <a class="btn btn-xs btn-success" href="{{route('comment.accept',['id' => $c->id])}}">Akceptuj</a>
+                    <a class="btn btn-xs btn-danger" href="{{route('comment.decline',['id' => $c->id])}}">Odrzuć</a>@endif	
+                    </td>
                 </tr>
                 @endforeach
                 

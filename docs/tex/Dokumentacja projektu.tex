@@ -38,8 +38,10 @@
 % Treść
 
 \section{Założenia projektowe}
+\paragraph{} W tym rozdziale opisane zostaną założenia, które przyświecały zespołowi podczas tworzenia aplikacji. Przedstawiony zostanie zarówno cel stworzenia programu, jak i funkcjonalności, które będą w nim docelowo dostępne.
 	\subsection{Przeznaczenie aplikacji}
 		\paragraph{}Celem niniejszego projektu jest stworzenie aplikacji webowej, pozwalającej na zarządzanie zadaniami podczas pracy w zespole. Umożliwiać ona będzie tworzenie wielu projektów, a w ich ramach zadań, do realizacji których przydzielać będzie można konkretnych użytkowników. Każdy projekt posiadać będzie menadżera, który ma większe uprawnienia, niż pozostali członkowie zespołu. Administrator aplikacji posiada maksymalne uprawnienia i może zarządzać również menadżerami.
+		\paragraph{}Jednym z przykładów innych aplikacji podobnego rodzaju (choć w tym kontekście z nieco mniejszymi możliwościami), które są dostępne już na rynku, może być serwis Trello: \url{https://trello.com}.
 	\subsection{Elementy składowe}
 		\paragraph{}Zgodnie z przedstawionymi wymaganiami, tworzona aplikacja składać się będzie z następujących elementów (cech):
 		\begin{itemize}
@@ -104,11 +106,14 @@
 		\end{itemize}
 		
 	\section{Specyfikacja techniczna}
+	\paragraph{}W tym rozdziale opisane zostaną techniczne aspekty wykonania projektu, w tym zastosowane języki programowania, biblioteki oraz technologie. Zostanie również wyjaśniona kwestia zarządzania pracą w zespole, opisane repozytorium kodu oraz struktura bazy danych.
 		\subsection{Język programowania i frameworki}
 			\subsubsection{PHP oraz Laravel}
-				Pehapiec i laravawawel
+				\paragraph{} Aplikacja stworzona została w oparciu o skryptowy, interpretowany o język PHP. Od początku stosowano także framework Laravel w wersji 5.4 rozszerzający możliwości języka między innymi o modułowość. Framework ten rozwijany jest w marach licencji MIT. Jego kod źródłowy pozostaje dostępny w serwisie GitHub, pod adresem: \url{https://github.com/laravel}. Laravel uznawany jest za jeden z najpopularniejszych frameworków języka PHP. Szacuje się, iż wykorzystuje go obecnie kilkadziesiąt milionów aplikacji webowych.
 			\subsubsection{Bootstrap}
-				Butsztrap
+				\paragraph{} Do stworzenia widoków w aplikacji wykorzystano framework Bootstrap. Gwarantuje on elementy zachowujące się zgodnie z ideologią RWD (Responsive Web Design) -- stron internetowych zachowujących responsywność w zależności od rozdzielczości ekranu, na którym wyświetlana jest witryna. Framework ten składa się z odpowiednio skonfigurowanych wstępnie plików CSS oraz JS, których dołączenie do projektu, a później tworzenie elementów interfejsu w oparciu o wspólne klasy, gwarantuje odpowiednie zachowanie strony.
+				\paragraph{} W naszym projekcie elementy Bootstrapa zaimportowane zostały do projektu bezpośrednio z wzorca \textit{AdminLTE Control Panel Template} dostępnego w Internecie pod adresem: \url{https://adminlte.io}.  
+				
 		\subsection{Baza danych}
 			Jakaż to baza i jej struktura
 		\subsection{Repozytorium kodu}

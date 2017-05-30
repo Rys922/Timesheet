@@ -31,6 +31,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
+    @section('form')
     <form method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
       <div class="form-group has-feedback">
@@ -71,7 +72,7 @@
         <!-- /.col -->
       </div>
     </form>
-
+    @show
     <!-- /.social-auth-links -->
 
     <a href="{{ route('password.request') }}">Przypomnij hasło</a><br>

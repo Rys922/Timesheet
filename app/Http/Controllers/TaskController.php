@@ -41,6 +41,8 @@ class TaskController extends Controller
 
         return view('layouts.projects.edit') -> with('project', $project);
     }
+    
+    
 
     public function saveProject(Request $request)
     {
