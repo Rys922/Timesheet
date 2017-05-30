@@ -16,7 +16,7 @@
 - <s>W systemie muszą występować 3 role - Administrator, Manager i Pracownik</s>,
 - Moduł przesyłania wiadomości pomiędzy użytkownikami systemu,
 - We wszystkich tabelach w systemie powinna być możliwość filtracji danych,
-- Należy zaimplementować mechanizm aprobowania wpisów.
+- <s>Należy zaimplementować mechanizm aprobowania wpisów</s>.
 
 ### <s>Pracownik</s>:
 - <s>Możliwość dodawania i edycji wpisów za danych dzień pracy. Wpis musi zawierać: datę, czas pracy, projekt, zadanie, komentarz</s>,
@@ -27,7 +27,7 @@
 - <s>Wyświetlanie wszystkich projektów, które są prowadzone przez danego managera</s>, 
 - <s>Wyświetlanie listy pracowników w danym projekcie</s>,
 - Generowanie raportu z przebiegu prac w projekcie,
-- Aprobowanie wpisów pracowników.
+- <s>Aprobowanie wpisów pracowników</s>.
 
 ### <s>Administrator</s>:
 - <s>Wyświetlanie listy użytkowników, zadań i projektów</s>,
