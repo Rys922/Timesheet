@@ -41,10 +41,14 @@ Route::group(['middleware' => ['constraints']], function () {
 
     // Routing kontrola zadań
     Route::get('/tasks', 'TaskController@index')->name('tasks');
+    
 
     // Routing kontrola wpisów
     Route::get('/comments', 'CommentController@index')->name('comments');
     Route::get('/comments/new/{id}', 'CommentController@showNewComment')->name('comment.add');
     Route::get('/comments/edit/{id}', 'CommentController@showComment')->name('comment.edit');
     Route::post('/comments/save', 'CommentController@saveComment')->name('comment.save');
+    Route::get('/comments/confirm', 'CommentController@showTasksToConfirm')->name('comments.confirm');
+    Route::get('/comments/accept/{id}', 'CommentController@doAccept')->name('comment.accept');
+    Route::get('/comments/decline/{id}', 'CommentController@doDecline')->name('comment.decline');
 });
