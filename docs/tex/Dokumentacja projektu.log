@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.26)  9 MAY 2017 11:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.26)  30 MAY 2017 11:16
 entering extended mode
 **"./Dokumentacja projektu.tex"
 ("Dokumentacja projektu.tex"
@@ -729,7 +729,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
  [3] [4]
-LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 115
+LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 110
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\ot4cmtt.fd"
@@ -737,25 +737,25 @@ File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 ) [5]
 
 AED: lastpage setting LastPage
-[6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
+[6] [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
  ("Dokumentacja projektu.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
 Package rerunfilecheck Info: File `"Dokumentacja projektu".out' has not changed
 .
 (rerunfilecheck)             Checksum: 6CAD306E4318145C63C50C926C237DE0;1486.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
  ) 
 Here is how much of TeX's memory you used:
- 6801 strings out of 493333
- 98308 string characters out of 3139194
+ 6804 strings out of 493333
+ 98336 string characters out of 3139194
  188667 words of memory out of 3000000
  10233 multiletter control sequences out of 15000+200000
  15200 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,10n,43p,595b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,10n,43p,657b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plit.enc}{C:/Program Files/Mi
 KTeX 2.9/fonts/enc/dvips/pl/pltt.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
 ps/pl/plrm.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
@@ -763,9 +763,9 @@ ps/pl/plrm.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 m Files/MiKTeX 2.9/fonts/type1/public/pl/plr12.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/pl/plr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/pl/plti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/pltt12.pfb>
-Output written on "Dokumentacja projektu.pdf" (6 pages, 83376 bytes).
+Output written on "Dokumentacja projektu.pdf" (7 pages, 86465 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
