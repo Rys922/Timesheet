@@ -5,6 +5,7 @@
 \usepackage{listings}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
+\usepackage{color}
 \usepackage[hidelinks]{hyperref}
 \newgeometry{tmargin=3.5cm, bmargin=3.5cm, lmargin=2.5cm, rmargin=2.5cm}
 \linespread{1.5}
@@ -115,21 +116,46 @@
 				\paragraph{} W naszym projekcie elementy Bootstrapa zaimportowane zostały do projektu bezpośrednio z wzorca \textit{AdminLTE Control Panel Template} dostępnego w Internecie pod adresem: \url{https://adminlte.io}.  
 				
 		\subsection{Baza danych}
-			Jakaż to baza i jej struktura
+			\colorbox{green}{Jakaż to baza i jej struktura}
 		\subsection{Repozytorium kodu}
 			\paragraph{}Aby zapewnić najwyższą wygodę pracy w zespole oraz bezpieczeństwo tworzonego kodu aplikacji, pliki projektu umieszczone zostały w repozytorium w serwisie GitHub, pod adresem:  \url{https://github.com/Rys922/Timesheet}. Znajduje się tam najnowsza wersja kodu, która na bieżąco aktualizowana jest przez członków zespołu, wraz z postępem w pracach.
 			\paragraph{} Wykorzystanie rozproszonego systemu kontroli wersji, jakim jest Git, gwarantuje dostępność kodu dla wszystkich członków zespołu i umożliwia jednoczesną pracę na plikach (aktualna wersja kodu zapisana jest zarówno lokalnie na komputerze programisty, jak i na głównym serwerze usługi).
 			\subsection{Zarządzanie pracą w zespole}
 			\paragraph{}Do rozdzielania prac pomiędzy członków zespołu tworzącego niniejszy projekt, wykorzystano serwis \textit{Trelloo} (\url{https://trello.com}). Jest to aplikacja pozwalająca dzielić zadania na grupy, przypisywać im osoby oraz wyznaczać terminy ich realizacji. Dzięki możliwości przenoszenia zrealizowanych zadań do innych grup, łatwo śledzić bieżący postęp w pracach. Pozwala to również w razie błędów cofnąć wybrany etap z fazy gotowości na przykład do fazy dalszych testów lub ponownej implementacji. 
 		\subsection{Uruchomienie aplikacji}
-			\paragraph{Baza danych}
-				Baza chodzi sobie tu i tam (adres i w ogóle)
+			\paragraph{} Aby uruchomić aplikację na komputerze, konieczne jest jego wstępne skonfigurowanie. W przeciwieństwie do bazy danych, aplikacja nie została wdrożona na publiczny serwer, wobec czego niezbędne jest sklonowanie plików projektu z repozytorium, a następnie uruchamianie aplikacji lokalnie.
+			\paragraph{}W tym celu konieczne jest pobranie aplikacji XAMPP (\url{https://www.apachefriends.org/pl}), a w niej uruchomienie modułu \textit{Apache}. Niezbędne jest również zmodyfikowanie dwóch plików konfiguracyjnych, by odpowiednio odwoływały się do tworzonej aplikacji:
+			\begin{itemize}
+				\item plik \verb+Windows\System32\drivers\etc\hosts+ należy uzupełnić o wpisy:
+				\begin{footnotesize}
+				\begin{lstlisting}[frame=single]  
+127.0.0.1 timesheet.dev 
+127.0.0.1 www.timesheet.dev
+\end{lstlisting}
+\end{footnotesize}
+				\item plik \verb+xampp\apache\conf\extra\httpd-vhosts.conf+ należy uzupełnić o:
+				\begin{footnotesize}
+				\begin{lstlisting}[frame=single]  
+<VirtualHost *:80>
+  ServerName timesheet.dev
+  ServerAlias www.timesheet.dev
+  DocumentRoot "F:/xampp/htdocs/timesheet"
+  <Directory "F:/xampp/htdocs/timesheet">
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+</VirtualHost>
+\end{lstlisting}
+\end{footnotesize}
+			\end{itemize}
+				
 			\paragraph{Witryna}
-				XAMMP-u XAMMP-u
+				\colorbox{green}{XAMMPPSIPS}
 \section{Realizacja}
-	\paragraph{Widoki}
+	\subsection{Zasada tworzenia widoków}
 		Był sobie główny widok, który później się rozszerza
-		\subsection{Przykładowe widoki}
+	\subsection{Wybrane widoki}
 			\subsubsection{Główny ekran aplikacji}
 			\subsubsection{Tworzenie nowego projektu}
 			\subsubsection{Coś jeszcze (?)}
@@ -138,5 +164,7 @@
 \section{Testowanie}
 	\subsection{Metody testowania}
 	\subsection{Jakieś wnioski?}
-
+\section{Dalszy rozwój aplikacji}
+	\subsection{Założenia, które nie zostały zrealizowane}
+	\subsection{Możliwość rozbudowania aplikacji w przyszłości}
 \end{document}
