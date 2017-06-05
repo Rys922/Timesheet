@@ -42,6 +42,15 @@ class TaskController extends Controller
        })->get(); 
             }
         }
+        elseif(Auth::user()->role=='user'){ 
+            if(!$request->has('query'))
+		        $tasks = \App\Task::all();   
+            else{
+                $tasks = \App\Task::where(function($query) use ($request){
+            $query->where('name','like','%'.$request->input('query').'%');
+       })->get(); 
+            }
+        }
         return view('layouts.tasks.index') -> with('tasks', $tasks);
 
 
