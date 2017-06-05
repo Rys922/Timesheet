@@ -45,7 +45,8 @@ class CommentController extends Controller
         if(Auth::user()->role != "user")
             return redirect('/');
         $comment = \App\Comment::find($id);
-        if($comment->state != "Oczekuje")
+
+        if($comment->stan != "Oczekuje")
             return redirect('/');
         return view('layouts.comments.edit') -> with('comment', $comment);
     }
