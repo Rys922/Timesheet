@@ -18,4 +18,9 @@ class Project extends Model
     {
         return $this->belongsToMany('App\User', 'project_user', 'project_id', 'user_id')->withPivot('id');
     }
+
+    public function tasks()
+    {
+        return $this->hasMany('App\Task');
+    }
 }

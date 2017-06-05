@@ -51,7 +51,7 @@
   @foreach($projects as $p)
 <div class="box box-default collapsed-box">
   <div class="box-header with-border">
-    <h3 class="box-title">{{$p -> name}}</h3>
+    <h3 class="box-title">@if(Auth::user()->role != "user") <a class="btn btn-info btn-xs" href="{{route('project.raport',['id' => $p->id])}}">RAPORT</a> @endif  {{ $p -> name}}</h3>
     <div class="box-tools pull-right">
       <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
     </div><!-- /.box-tools -->
@@ -83,6 +83,9 @@
           @foreach($p->workers as $worker)
               <button class="btn btn-xs btn-default">{{$worker->name}} {{$worker->surname}}</button>
           @endforeach
+          @if($p->workers->isEmpty())
+           <i> Brak przypisanych pracowników.</i>
+          @endif
         @endif
       </div>
       @endif

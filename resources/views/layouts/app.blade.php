@@ -47,37 +47,7 @@
         <span class="icon-bar"></span>
       </a>
 
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <!-- Messages: style can be found in dropdown.less-->
-          <li class="dropdown messages-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        <i class="fa fa-3x fa-user"></i>
-                      </div>
-                      <h4>
-                        Support Team
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <!-- end message -->
-                </ul>
-              </li>
-              <li class="footer"><a href="#">Zobacz wszystkie wiadomości</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+ 
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
@@ -125,16 +95,6 @@
             </span>
           </a>
         </li>
-           
-        <li>
-          <a href="#">
-            <i class="fa fa-envelope"></i> <span>Wiadomości</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">4</small>
-              <small class="label pull-right bg-green">16</small>
-            </span>
-          </a>
-        </li>
 
       </ul>
       @endif
@@ -161,15 +121,6 @@
           </a>
         </li>
 
-        <li>
-          <a href="#">
-            <i class="fa fa-envelope"></i> <span>Wiadomości</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">4</small>
-              <small class="label pull-right bg-green">16</small>
-            </span>
-          </a>
-        </li>
 
       </ul>
       @endif
@@ -204,9 +155,11 @@
  
     <!-- Main content -->
     <section class="content">
+     @section('content')
 
-      @yield('content')
+    Witaj w TimeSheet! Wybierz sekcję!
 
+    @show    
     </section>
     <!-- /.content -->
   </div>

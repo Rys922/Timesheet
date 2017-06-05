@@ -10,11 +10,21 @@ class Task extends Model
 
     public function workers()
     {
-        return $this->belongsToMany('App\User', 'project_user', 'user_id', 'project_id');
+        return $this->belongsToMany('App\User', 'task_user', 'user_id', 'task_id');
     }
 
     public function project()
     {
         return $this->belongsTo('App\Project');
+    }
+
+    public function comments()
+    {
+        return $this->hasMany('App\Comment','task_id');
+    }
+
+    public function acceptedComments()
+    {
+        return $this->hasMany('App\Comment','task_id')->where('stan','=','Zaakceptowany');
     }
 }

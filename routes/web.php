@@ -38,6 +38,7 @@ Route::group(['middleware' => ['constraints']], function () {
     Route::get('/projects/adduser/{id}/{project}', 'ProjectController@addUser')->name('project.addUser');
     Route::post('/projects/hint/{id}', 'ProjectController@hintUser')->name('project.hintUser');
     Route::get('/projects/deluser/{id}', 'ProjectController@deleteUser')->name('project.delUser');
+    Route::get('/projects/raport/{id}', 'ProjectController@showRaport')->name('project.raport');
 
     // Routing kontrola zadań
     Route::get('/tasks', 'TaskController@index')->name('tasks');

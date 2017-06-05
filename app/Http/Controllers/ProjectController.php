@@ -60,6 +60,17 @@ class ProjectController extends Controller
        return redirect('/');        
     }
 
+    public function showRaport($id = null)
+    {	
+        $project = \App\Project::find($id);
+        
+		
+            if(Auth::user()->role != "user" && $project)
+                    return view('layouts.projects.raport') -> with('project', $project);
+
+       return redirect('/');        
+    }
+
     public function saveProject(Request $request)
     {
         
