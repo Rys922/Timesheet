@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.26)  3 JUN 2017 23:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.17)  6 JUN 2017 00:45
 entering extended mode
 **"./Dokumentacja projektu.tex"
 ("Dokumentacja projektu.tex"
@@ -474,6 +474,23 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count98
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
@@ -526,7 +543,7 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen115
+\@linkdim=\dimen117
 \Hy@linkcounter=\count99
 \Hy@pagecounter=\count100
 
@@ -554,10 +571,10 @@ Package hyperref Info: Bookmarks ON on input line 4735.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5088.
-\XeTeXLinkMargin=\dimen116
+\XeTeXLinkMargin=\dimen118
 \Fld@menulength=\count103
-\Field@Width=\dimen117
-\Fld@charsize=\dimen118
+\Field@Width=\dimen119
+\Fld@charsize=\dimen120
 Package hyperref Info: Hyper figures OFF on input line 6342.
 Package hyperref Info: Link nesting OFF on input line 6347.
 Package hyperref Info: Hyper index ON on input line 6350.
@@ -622,22 +639,22 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 ("Dokumentacja projektu.aux")
 \openout1 = `"Dokumentacja projektu.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -676,24 +693,37 @@ LaTeX Font Info:    ... okay on input line 25.
 \c@lstlisting=\count109
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 25.
+(lastpage)             ! on input line 38.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
-\scratchdimen=\dimen119
+\scratchdimen=\dimen121
 \scratchbox=\box28
 \nofMPsegments=\count111
 \nofMParguments=\count112
 \everyMPshowfont=\toks19
 \MPscratchCnt=\count113
-\MPscratchDim=\dimen120
+\MPscratchDim=\dimen122
 \MPnumerator=\count114
 \makeMPintoPDFobject=\count115
 \everyMPtoPDFconversion=\toks20
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 25.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package hyperref Info: Link coloring OFF on input line 38.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
@@ -701,37 +731,37 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count116
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
 
 ("Dokumentacja projektu.out") ("Dokumentacja projektu.out")
 \@outlinefile=\write3
 \openout3 = `"Dokumentacja projektu.out"'.
 
-LaTeX Font Info:    Try loading font information for OML+plm on input line 30.
+LaTeX Font Info:    Try loading font information for OML+plm on input line 43.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 30.
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 43.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omsplsy.fd"
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 30.
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 43.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omxplex.fd"
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <14.4> on input line 30.
+(Font)              <14.4> on input line 43.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 30.
+(Font)              <10> on input line 43.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 30.
+(Font)              <7> on input line 43.
  [1
 
 
@@ -743,10 +773,6 @@ LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <6> on input line 3.
-)
-\tf@toc=\write4
-\openout4 = `"Dokumentacja projektu.toc"'.
-
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -754,64 +780,108 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 45.
+[2])
+\tf@toc=\write4
+\openout4 = `"Dokumentacja projektu.toc"'.
+
+ [3]
+LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 58.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\ot4cmtt.fd"
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 50.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
- [3] [4] [5] [6]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 139.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
+ [4] [5] [6]
+<baza.png, id=173, 1204.5pt x 684.5575pt>
+File: baza.png Graphic file (type png)
+ <use baza.png>
+Package pdftex.def Info: baza.png used on input line 134.
+(pdftex.def)             Requested size: 483.69684pt x 274.90446pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
+
+ []
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 132--135
+[] 
+ []
+
+[7] [8 <./baza.png>] [9]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 154.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 139.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 154.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 139.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
+
+Overfull \hbox (2.02408pt too wide) in paragraph at lines 170--171
+\OT4/cmr/m/n/12 do po-bra-nia pod ad-re-sem: []$\OT4/cmtt/m/n/12 https : / / ww
+w . dropbox . com / s / ceo3a3tkqdo8hsl / vendor . rar$[]\OT4/cmr/m/n/12 . 
+ []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+[10]
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <5> on input line 183.
+ [11] 
 AED: lastpage setting LastPage
-[7] [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
+[12] [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
  ("Dokumentacja projektu.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
-Package rerunfilecheck Info: File `"Dokumentacja projektu".out' has not changed
-.
-(rerunfilecheck)             Checksum: D3F500B30312B65BF8FE925A604989BA;1821.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
+
+
+Package rerunfilecheck Warning: File `"Dokumentacja projektu".out' has changed.
+
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Dokumentacja projektu".out':
+(rerunfilecheck)             Before: D3F500B30312B65BF8FE925A604989BA;1821
+(rerunfilecheck)             After:  042899650C245FA175B8FDD7B61DC3C6;1830.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
- 7710 strings out of 493333
- 109130 string characters out of 3139194
- 208992 words of memory out of 3000000
- 11093 multiletter control sequences out of 15000+200000
- 15200 words of font info for 43 fonts, out of 3000000 for 9000
+ 8030 strings out of 493333
+ 113901 string characters out of 3139194
+ 217239 words of memory out of 3000000
+ 11347 multiletter control sequences out of 15000+200000
+ 16332 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,11n,43p,602b,1358s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files/Mi
-KTeX 2.9/fonts/enc/dvips/pl/plit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
-ps/pl/pltt.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/pl/plr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr
-17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/pl/pltt12.pfb>
-Output written on "Dokumentacja projektu.pdf" (8 pages, 120177 bytes).
+ 29i,12n,43p,602b,1859s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{C:/Program Files/Mi
+KTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
+ps/pl/plit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/pltt.enc}<C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/pl/plr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr12.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr17.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/pl/plti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/p
+l/pltt12.pfb>
+Output written on "Dokumentacja projektu.pdf" (13 pages, 246266 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 339 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
