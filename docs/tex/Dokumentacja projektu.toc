@@ -1,43 +1,34 @@
-\contentsline {section}{\numberline {1}Za\IeC {\l }o\IeC {\.z}enia projektowe}{4}{section.1}
-\contentsline {paragraph}{}{4}{section*.2}
-\contentsline {subsection}{\numberline {1.1}Przeznaczenie aplikacji}{4}{subsection.1.1}
-\contentsline {paragraph}{}{4}{section*.3}
-\contentsline {paragraph}{}{4}{section*.4}
-\contentsline {subsection}{\numberline {1.2}Elementy sk\IeC {\l }adowe}{4}{subsection.1.2}
-\contentsline {paragraph}{}{4}{section*.5}
-\contentsline {section}{\numberline {2}Specyfikacja techniczna}{6}{section.2}
-\contentsline {paragraph}{}{6}{section*.6}
-\contentsline {subsection}{\numberline {2.1}J\IeC {\k e}zyk programowania i frameworki}{7}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}PHP oraz Laravel}{7}{subsubsection.2.1.1}
-\contentsline {paragraph}{}{7}{section*.7}
-\contentsline {subsubsection}{\numberline {2.1.2}Bootstrap}{7}{subsubsection.2.1.2}
-\contentsline {paragraph}{}{7}{section*.8}
-\contentsline {paragraph}{}{7}{section*.9}
-\contentsline {subsection}{\numberline {2.2}Baza danych}{8}{subsection.2.2}
-\contentsline {paragraph}{}{8}{section*.10}
-\contentsline {subsection}{\numberline {2.3}Repozytorium kodu}{8}{subsection.2.3}
-\contentsline {paragraph}{}{8}{section*.11}
-\contentsline {paragraph}{}{9}{section*.12}
-\contentsline {subsection}{\numberline {2.4}Zarz\IeC {\k a}dzanie prac\IeC {\k a} w zespole}{9}{subsection.2.4}
-\contentsline {paragraph}{}{9}{section*.13}
-\contentsline {subsection}{\numberline {2.5}Uruchomienie aplikacji}{9}{subsection.2.5}
-\contentsline {paragraph}{}{9}{section*.14}
-\contentsline {paragraph}{}{9}{section*.15}
-\contentsline {paragraph}{}{10}{section*.16}
-\contentsline {paragraph}{}{10}{section*.17}
-\contentsline {paragraph}{}{10}{section*.18}
-\contentsline {section}{\numberline {3}Realizacja projektu}{12}{section.3}
-\contentsline {paragraph}{}{12}{section*.19}
-\contentsline {subsection}{\numberline {3.1}Zasada tworzenia widok\IeC {\'o}w}{12}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Wybrane widoki}{13}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}G\IeC {\l }\IeC {\'o}wny ekran aplikacji}{13}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Tworzenie nowego projektu}{13}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}Co\IeC {\'s} jeszcze (?)}{13}{subsubsection.3.2.3}
-\contentsline {subsection}{\numberline {3.3}Mechanizm logowania u\IeC {\.z}ytkownika}{13}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Mechanizm rejestracji u\IeC {\.z}ytkownika}{13}{subsection.3.4}
-\contentsline {section}{\numberline {4}Testowanie}{13}{section.4}
-\contentsline {subsection}{\numberline {4.1}Metody testowania}{13}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Jakie\IeC {\'s} wnioski?}{13}{subsection.4.2}
-\contentsline {section}{\numberline {5}Dalszy rozw\IeC {\'o}j aplikacji}{13}{section.5}
-\contentsline {subsection}{\numberline {5.1}Za\IeC {\l }o\IeC {\.z}enia, kt\IeC {\'o}re nie zosta\IeC {\l }y zrealizowane}{13}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Mo\IeC {\.z}liwo\IeC {\'s}\IeC {\'c} rozbudowania aplikacji w przysz\IeC {\l }o\IeC {\'s}ci}{13}{subsection.5.2}
+\contentsline {section}{\numberline {1}Za\IeC {\l }o\IeC {\.z}enia projektowe}{3}{section.1}
+\contentsline {paragraph}{}{3}{section*.2}
+\contentsline {subsection}{\numberline {1.1}Przeznaczenie aplikacji}{3}{subsection.1.1}
+\contentsline {paragraph}{}{3}{section*.3}
+\contentsline {paragraph}{}{3}{section*.4}
+\contentsline {subsection}{\numberline {1.2}Elementy sk\IeC {\l }adowe}{3}{subsection.1.2}
+\contentsline {paragraph}{}{3}{section*.5}
+\contentsline {section}{\numberline {2}Specyfikacja techniczna}{5}{section.2}
+\contentsline {paragraph}{}{5}{section*.6}
+\contentsline {subsection}{\numberline {2.1}J\IeC {\k e}zyk programowania i frameworki}{6}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}PHP oraz Laravel}{6}{subsubsection.2.1.1}
+\contentsline {paragraph}{}{6}{section*.7}
+\contentsline {subsubsection}{\numberline {2.1.2}Bootstrap}{6}{subsubsection.2.1.2}
+\contentsline {paragraph}{}{6}{section*.8}
+\contentsline {paragraph}{}{6}{section*.9}
+\contentsline {subsection}{\numberline {2.2}Baza danych}{7}{subsection.2.2}
+\contentsline {paragraph}{}{7}{section*.10}
+\contentsline {subsection}{\numberline {2.3}Repozytorium kodu}{7}{subsection.2.3}
+\contentsline {paragraph}{}{7}{section*.11}
+\contentsline {paragraph}{}{8}{section*.12}
+\contentsline {subsection}{\numberline {2.4}Zarz\IeC {\k a}dzanie prac\IeC {\k a} w zespole}{8}{subsection.2.4}
+\contentsline {paragraph}{}{8}{section*.13}
+\contentsline {subsection}{\numberline {2.5}Uruchomienie aplikacji}{8}{subsection.2.5}
+\contentsline {paragraph}{}{8}{section*.14}
+\contentsline {paragraph}{}{8}{section*.15}
+\contentsline {paragraph}{}{9}{section*.16}
+\contentsline {paragraph}{}{9}{section*.17}
+\contentsline {paragraph}{}{9}{section*.18}
+\contentsline {section}{\numberline {3}Realizacja projektu -- widoki aplikacji}{11}{section.3}
+\contentsline {paragraph}{}{11}{section*.19}
+\contentsline {subsection}{\numberline {3.1}Wszyscy u\IeC {\.z}ytkownicy}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Administrator}{13}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Mened\IeC {\.z}er}{15}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Regularny u\IeC {\.z}ytkownik}{17}{subsection.3.4}
